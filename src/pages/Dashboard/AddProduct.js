@@ -7,7 +7,7 @@ import { useAddProductMutation } from "../../features/api/apiSlice";
 
 const AddProduct = () => {
   const { register, handleSubmit, reset } = useForm();
-  const [postProduct, { isError, isLoading, isSuccess }] =
+  const [postProduct, { isLoading, isSuccess }] =
     useAddProductMutation();
 
   useEffect(() => {

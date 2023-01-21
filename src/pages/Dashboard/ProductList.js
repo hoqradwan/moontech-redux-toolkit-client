@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React  from "react";
 import { toast } from "react-hot-toast";
 import { useGetProductsQuery, useRemoveProductMutation } from "../../features/api/apiSlice";
 
@@ -8,8 +8,8 @@ const ProductList = () => {
 
 const products = data?.data;
   if(isLoading){
-    return <h1>Loading...</h1>
-  }
+    return <p>Loading...</p>}
+
   return (
     <div class='flex flex-col justify-center items-center h-full w-full '>
       <div class='w-full max-w-7xl mx-auto rounded-lg  bg-white shadow-lg border border-gray-200'>

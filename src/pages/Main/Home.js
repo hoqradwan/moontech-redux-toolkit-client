@@ -9,7 +9,7 @@ const Home = () => {
   const { brands, stock } = filter;
   const dispatch = useDispatch();
 
-const {data, isError, isLoading, isSuccess, error} = useGetProductsQuery(null);
+const {data, isError, isLoading} = useGetProductsQuery(null);
 const products = data?.data;
   const activeClass = "text-white bg-indigo-500 border-white";
 let content;
