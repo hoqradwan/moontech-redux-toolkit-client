@@ -1,5 +1,4 @@
 import React  from "react";
-import { toast } from "react-hot-toast";
 import { useGetProductsQuery, useRemoveProductMutation } from "../../features/api/apiSlice";
 
 const ProductList = () => {
